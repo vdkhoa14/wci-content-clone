@@ -1,0 +1,38 @@
+.top_fixed_banner {
+    background: #2A303B;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    vertical-align: top;
+    height: 45px;
+    z-index: 99999999;
+    overflow: hidden;
+}
+.top_fixed_banner .content{
+    padding: 5px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 45px;
+}
+.top_fixed_banner .content span{
+    color: #e0e0e0;
+    font-weight: 100;
+    line-height: 35px;
+    display: inline-block;
+    font-size: 13px;
+    width: fit-content;
+    margin: 0px 15px;
+}
+
+@media only screen and (max-width: 768px){
+    .top_fixed_banner{
+        width: 100%;
+        position: relative;
+        height: fit-content;
+        margin-top: -50px;
+    }
+}

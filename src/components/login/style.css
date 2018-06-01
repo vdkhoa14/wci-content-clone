@@ -1,0 +1,41 @@
+body{
+    background: #12395A;
+}
+.login-box.wrapper {
+    width: 500px;
+    text-align: center;
+}
+.login-box.wrapper .login-logo a {
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(63, 140, 202);
+}
+.login-box.wrapper .login-box-body > p,
+.login-box.wrapper .login-box-body > a{
+    color: rgb(63, 140, 202);
+}
+.login-box.wrapper .login-box-body > form > div.form-group.has-feedback > input{
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 100;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 60% ;
+    display: inline-block;
+    box-sizing: border-box
+}
+.login-box.wrapper .login-box-body > form > div.row button{
+    margin-top: 20px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    width: 60%;
+    font-weight: bold;
+    color: #12395A;
+    cursor: pointer;
+    transition: all 0.1s linear;
+}
+.login-box.wrapper .login-box-body > form > div.row button:hover{
+    background: rgba(255,255,255,0.5);
+}

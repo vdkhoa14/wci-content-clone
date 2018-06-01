@@ -1,0 +1,33 @@
+.read-more-page{
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 999999000;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+}
+.read-more-page > .text{
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background: #fff;
+    margin: 15px auto;
+    max-width: 1000px;
+    border-radius: 5px;
+}
+.read-more-page > .text > .header{
+    text-align: right;
+    padding: 15px 20px;
+}
+.read-more-page > .text > .header > i{
+    color: #999;
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+.read-more-page > .text > .header > i:hover{
+    color: #444;
+}
+.read-more-page > .text > .contents{
+    padding: 0px 20px 20px 20px;
+    overflow: scroll
+}

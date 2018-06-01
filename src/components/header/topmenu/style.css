@@ -1,0 +1,267 @@
+
+
+.top_menu {
+    text-align: center;
+    height: 60px;
+    position: relative;
+    z-index: 99999990;
+    width: 100%;
+}
+.top_menu .content{
+    text-align: center;
+    width: 950px;
+    margin: auto;
+}
+.top_menu .content .logo{
+    width: fit-content;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 200px;
+}
+
+.top_menu .content .logo .container {
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 5px -8px 5px rgba(0,0,0,0.2);
+}
+
+
+.top_menu .content .logo .shadow {
+    -ms-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -webkit-box-shadow: 0 6px 16px -6px black;
+    box-shadow: 5px 6px 16px -6px black;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    margin-top: -65px;
+    z-index: -1;
+    margin-left: 2px;
+}
+
+.top_menu .content .logo img {
+    height: 55px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.top_menu .content .phone_tab{
+    display: inline-block;
+    height: 60px;
+    width: fit-content;
+    vertical-align: top;
+    background:#4276CD;
+}
+.top_menu .content .phone_tab > span{
+    line-height: 60px;
+    padding: 0px 20px;
+    font-weight: 100;
+    color: #fff;
+    font-size: 115%;
+}
+.top_menu .content .menu{
+    display: inline-block;
+    height: 60px;
+    width: fit-content;
+    vertical-align: top;
+    background:#4276CD;
+    width: calc(100% - 200px);
+    text-align: right;
+}
+.top_menu .content .menu ul.menu_list{
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.3s linear;
+    float: right;
+    width: fit-content;
+}
+.top_menu .content .menu::after{
+    display: inline-block;
+    position: absolute;
+    content: '';
+    background:#4276CD;
+    height: 60px;
+    width: 30%;
+    right: 0px;
+    z-index: -100;
+}
+.top_menu .content .menu ul.menu_list li {
+    list-style: none;
+    float: left;
+    line-height: 58px;
+    cursor: pointer;
+    max-width: fit-content;
+    transition: all 0.3s linear;
+
+}
+.top_menu .content .menu ul.menu_list > li:hover > a{
+    background:#2054AE;
+    display: inline-block;
+    width: 100%;
+    height: 60px !important;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+    
+}
+.top_menu .content .menu ul.menu_list li.menu_item_space{
+    border-left: 1px solid #2054AE;
+    height: 60px;
+}
+.top_menu .content .menu ul.menu_list li > a{
+    color: #fff;
+    font-weight: 100;
+    font-size: 115%;
+    padding: 0px 20px;
+    text-decoration: none;
+    background: none;
+}
+.top_menu .content .menu ul.menu_list li.menu_item:hover > ul.sub_menu{
+    display: block;
+}
+.top_menu .content .menu ul.menu_list li.menu_item ul.sub_menu{
+    padding: 0px;
+    background: rgba(255,255,255,0.7);
+    border: 1px solid #ccc;
+    border-top: 0px;
+    margin-left: -1px;
+    display: none;
+    animation: topDown 0.4s;
+    position: absolute;
+    min-width: fit-content;
+}
+.top_menu .content .menu ul.menu_list li.menu_item ul.sub_menu li{
+    float: none;
+    min-width: 200px;
+    text-align: left;
+    list-style: none;
+    line-height: 45px;
+}
+.top_menu .content .menu ul.menu_list li.menu_item ul.sub_menu li a{
+    color: #2054AE;
+    width: 100%;
+    font-weight: 400;
+    display: inline-block;
+}
+/* .top_menu .content .menu ul.menu_list li.menu_item ul.sub_menu::before{
+    content: '';
+    width: 0;
+    height: 0;
+    margin-left: -60px;
+    border: 10px solid transparent;
+    border-top: 0;
+    border-bottom: 10px solid #fff;
+    position: absolute;
+    z-index: 999;
+    margin-top:-10px;
+} */
+.top_menu .content .menu ul.menu_list li.menu_item ul.sub_menu.faq::before{
+    margin-left: -72px;
+}
+.top_menu .content .menu ul.menu_list li.menu_item ul.sub_menu li:hover{
+    background: #ccc;
+}
+
+
+
+@media only screen and (max-width: 950px){
+    .top_menu .content{
+        text-align: left;
+        min-width: 80%;
+        width: 80%;
+    }
+    .top_menu .content .small-menu{
+        display: inline-block;
+        width: calc(100% - 133px);
+        text-align: right;
+        background: #4276CD;
+        position: absolute;
+        right: 0px;
+        z-index: -1000;
+    }
+    .top_menu .content .small-menu i{
+        color: #fff;
+        font-size: 150%;
+        padding: 18px;
+        box-sizing: border-box;
+    }
+    .top_menu .content .small-menu ul.menu-1{
+        background: rgba(255,255,255,1);
+        position: absolute;
+        right: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: fit-content;
+        transition: all 0.3s ease;
+        padding: 0px;
+        box-shadow: 0px 0px 2px #333;
+        overflow: hidden;
+        z-index: 99999999999999999;
+    }
+    .top_menu .content .small-menu ul.menu-1::before{
+        content: '';
+        width: 0;
+        height: 0;
+        margin-left: -60px;
+        border: 10px solid transparent;
+        border-top: 0;
+        border-bottom: 10px solid rgba(255,255,255,1);
+        position: absolute;
+        z-index: 999;
+        margin-top:-10px;
+        right: 18px;
+    }
+    .top_menu .content .small-menu ul.menu-1 li{
+        list-style: none;
+        z-index: 9999999;
+    }
+    .top_menu .content .small-menu ul.menu-1 .menu-item {
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        line-height: 50px;
+        text-align: left;
+        padding-left: 20px;
+        cursor: pointer;
+        overflow: hidden;
+        max-height: 50px;
+        transition: all 0.3s linear;
+        box-sizing: border-box;
+    }
+    .top_menu .content .small-menu ul.menu-1 .menu-item a{
+        text-decoration: none;
+        color: #2054AE;
+        font-weight: 100;
+        display: inline-block;
+        width: 60%;
+    }
+    .top_menu .content .small-menu ul.menu-1 .menu-item i{
+        color: rgb(102, 136, 196);
+        float: right;
+        margin-right: 40px;
+        padding: 10px;
+        pointer-events: none;
+    }
+    .top_menu .content .logo .container{
+        height: 60px;
+    }
+    .top_menu .content .phone_tab{
+        display: none;
+    }
+    .top_menu .content .logo .shadow{
+        margin-left: -1px;
+    }
+}
+
+
+
+@keyframes topDown {
+    from {
+        margin-top: -5px;
+        opacity: 0;
+    }
+    to {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}

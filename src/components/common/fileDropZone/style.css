@@ -1,0 +1,113 @@
+.dropzone .loader{
+    border: 3px solid rgba(0,0,0,0.1); /* Light grey */
+    border-top: 3px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px auto;
+    animation: spin 2s ease infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.col-md-6{
+    width: 100%;
+    float: none;
+    padding: 0px;
+    animation: fadeIn 0.5s;
+}
+
+.dropzone,
+.dropzone * {
+    box-sizing: border-box
+}
+
+.dropzone {
+    background: white;
+    
+}
+.dropzone .dropzone_contain {
+    border: 2px dashed #3c8dbc;
+    border-radius: 5px;
+    background: #e0e0e0;
+    padding: 20px;
+    min-height: 200px;
+}
+.dropzone .dropzone_contain .drop_item {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+}
+.dropzone .dropzone_contain .drop_item:hover .item_contain img {
+    -webkit-transform: scale(2.05, 2.05);
+    -moz-transform: scale(2.05, 2.05);
+    -ms-transform: scale(2.05, 2.05);
+    -o-transform: scale(2.05, 2.05);
+    transform: scale(2.05, 2.05);
+    -webkit-filter: blur(10px);
+    filter: blur(10px)
+}.dropzone .dropzone_contain .drop_item .item_contain {
+    overflow: hidden;
+    border-radius: 10px;
+    height: 100%;
+}
+.dropzone .dropzone_contain .drop_item:hover .item_contain i.fa.fa-times,
+.dropzone .dropzone_contain .drop_item:hover .item_contain span.item_name{
+    display: inline;
+    animation: fadeIn 0.4s;
+}
+.dropzone .dropzone_contain .drop_item .item_contain img {
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+}
+.dropzone .dropzone_contain .drop_item .item_contain i.fa.fa-times {
+    opacity: 0.7;
+    font-size: 30px;
+    position: absolute;
+    margin-left: -45px;
+    cursor: pointer;
+    display: none;
+    color: #333;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    text-align: center;
+    line-height: 38px;
+    margin-top: 5px;
+}
+.dropzone .dropzone_contain .drop_item .item_contain span.item_name {
+    width: fit-content;
+    position: absolute;
+    margin-top: 10%;
+    margin-left: -20%;
+    max-width: 19%;
+    background: #fff;
+    opacity: 0.8;
+    display: none;
+    padding: 2px 10px;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.dropzone .dropzone_contain .drop_item .item_contain span.item_name:hover{
+    max-width: 100%;
+}
+.ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 0.8;}
+    }
+    @keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 0.8;}
+    }
+
+    

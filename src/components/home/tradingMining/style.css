@@ -1,0 +1,56 @@
+.trading-mining{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.trading-mining .item{
+    width: 100%;
+    display: inline-block;
+    background: #4C77C7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 20px;
+    height: 100%;
+}
+
+.trading-mining .item .image{
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+.trading-mining .item .content{
+    width: calc(100% - 150px);
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+}
+.trading-mining .item .content span{
+    font-size: 20px;
+}
+.trading-mining .item .content p{
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 800px){
+    .trading-mining{
+        padding: 10px;
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 10px;
+    }
+    .trading-mining .item{
+        border-radius: 0px;
+    }
+    .trading-mining .item .image{
+        width: 100%;
+        text-align: center;
+    }
+    .trading-mining .item .content{
+        width: 100%;
+
+    }
+}

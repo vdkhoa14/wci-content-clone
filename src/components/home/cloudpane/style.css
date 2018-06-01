@@ -1,0 +1,87 @@
+.cloud-pane{
+    text-align: center;
+    width: 100%; 
+    background: #4276CD;
+    padding: 50px 0px;
+}
+.cloud-pane .content .title p{
+    color: #fff;
+    margin: 0px;
+    font-weight: 100;
+    font-size: 250%;
+    margin-bottom: 30px;
+}
+.cloud-pane .content .message p{
+    color: #fff;
+    font-weight: 100;
+    font-size: 120%;
+}
+.cloud-pane .content .link-icon-box{
+    margin-top: 50px;
+}
+.cloud-pane .content .link-icon-box >span> a{
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    padding: 20px;
+    margin: 0px 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    transition: all 0.2s linear;
+    border-radius: 15px;
+}
+.cloud-pane .content .link-icon-box >span> a:hover{
+    border: 1px solid rgb(124, 162, 228);
+    background: rgba(255,255,255,0.2);
+}
+.cloud-pane .content .link-icon-box >span> a div.link-item{
+    width: 100%;
+}
+
+.cloud-pane .content .link-icon-box >span> a div.link-item img{
+    width: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 10px;
+}
+.cloud-pane .content .link-icon-box > div.link-item span{
+    color: #fff;
+    font-weight: 100;
+}
+
+
+@media only screen and (max-width: 949px){
+    .cloud-pane .content .title p{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .cloud-pane .content .link-icon-box > a{
+        width: 150px;
+        height: 150px;
+        margin: 0px;
+        font-size: 0.9em;
+        padding: 0px;
+    }
+    .cloud-pane .content .link-icon-box > a > div img{
+        width: 65% !important;
+        display: block;
+        margin: 0px auto;
+    }
+    .cloud-pane .content .link-icon-box > a > div >span > span{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .cloud-pane .content .link-icon-box > a{
+        width: 70px;
+        height: 90px;
+        margin: 0px;
+        font-size: 0.9em;
+        padding: 0px;
+    }
+}

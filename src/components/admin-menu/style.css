@@ -1,0 +1,55 @@
+#admin-menu{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    border: 1px solid #ccc;
+    z-index: 9999999;
+    background: #fff;
+    transition: all 0.2s linear;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#admin-menu > .info > img{
+    width: 100%;
+    height: 100%;
+    max-width: 70px;
+    max-height: 70px;
+    cursor: pointer;
+}
+#admin-menu > .info > span{
+    vertical-align: top;
+    line-height: 70px;
+}
+
+#admin-menu.active{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 3px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#admin-menu > .menu ul{
+    padding: 0px;
+}
+#admin-menu > .menu ul li{
+    color: #12395A;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+#admin-menu > .menu ul li:hover{
+    color: #fff;
+    background: #12395A;
+}
+#admin-menu > .menu{
+    width: 100%;
+    text-align: center;
+}

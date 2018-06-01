@@ -1,0 +1,25 @@
+.icon-table{
+    text-align: center;
+    max-height: 200px;
+    overflow: scroll;
+}
+.icon-table > i{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #888;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease
+}
+.icon-table > i:hover,
+.icon-table > i.active{
+    background: rgb(103, 152, 241);
+    color: #fff;
+    border-color: rgb(103, 152, 241);
+}

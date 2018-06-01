@@ -1,0 +1,91 @@
+.rewards-program .content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.rewards-program .content .rewar-item{
+    box-sizing: border-box;
+}
+.rewards-program .content .rewar-item .item-content .content-value{
+    display: inline-block;
+    width: calc(100% - 200px );
+}
+.rewards-program .content .rewar-item .item-content .content-icon{
+    display: inline-block;
+    width: 200px;
+}
+.rewards-program .content .rewar-item .item-content .content-icon img{
+    display: inline-block;
+    height: 150px;
+    line-height: 140px;
+    font-size: 300%;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: top;
+}
+.rewards-program .content .rewar-item .item-content .content-value .title{
+    display: inline-block;
+    width: 100%;
+    font-size: 150%;
+    color: #4375B4;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.rewards-program .content .rewar-item .item-content .content-value .value{
+    font-weight: 100;
+    color: #777;
+}
+.rewards-program .content .rewar-item .item-content{
+    padding: 20px;
+}
+.rewards-program .content .rewar-item .item-content.icon-right{
+    text-align: right;
+}
+.rewards-program .content .rewar-item .item-content.icon-right .content-icon{
+    padding-left: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+
+}
+.rewards-program .content .rewar-item .item-content.icon-left .content-icon{
+    padding-right: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+
+
+@media only screen and (max-width: 949px){
+    .rewards-program .content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .rewards-program .content .rewar-item .item-content.icon-right .content-icon{
+        position: absolute;
+        left: 0px;
+        text-align: left;
+    }
+    .rewards-program .content .rewar-item .item-content.icon-left .content-icon{
+        position: absolute;
+        right: 0px;
+        text-align: right;
+    }
+    .rewards-program .content .rewar-item .item-content .content-icon{
+        width: 150px;
+        padding: 20px 0px;
+    }
+    .rewards-program .content .rewar-item .item-content .content-icon img{
+        width: 100%;
+        height: auto;
+        padding: 0px !important;
+    }
+    .rewards-program .content .rewar-item .item-content .content-value{
+        width: calc(100% - 150px);
+        height: fit-content !important;
+    }
+    .rewards-program .content .rewar-item .item-content.icon-right .content-icon img,
+    .rewards-program .content .rewar-item .item-content.icon-left .content-icon img{
+        line-height: 85px;
+        font-size: 40px;
+        padding: 20% ;
+    }
+
+}

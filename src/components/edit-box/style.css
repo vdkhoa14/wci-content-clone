@@ -1,0 +1,97 @@
+.edit-box{
+    position: fixed !important;
+    background: rgba(0,0,0,0.9);
+    width: 100% !important;
+    height: 100vh !important;
+    z-index: 999999999;
+    top: 0px;
+    left: 0px;
+    overflow: scroll;
+}
+.edit-box.editor .contain{
+    width: 90%;
+}
+.edit-box .switch_button{
+    width: 100%;
+    text-align: right;
+}
+.edit-box .switch_button span{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    box-shadow: inset 0 0 3px #999;
+    position: relative;
+}
+.edit-box .switch_button span::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    background: #6CADDB;
+    left: 0px;
+}
+.edit-box .contain{
+    background: #fff;
+    width: 500px;
+    margin: 50px auto;
+    border-radius: 3px;
+}
+.edit-box .contain .header{
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.edit-box .contain .header > i{
+    float: right;
+    margin-top: 2px;
+    cursor: pointer;
+    color: #999;
+    transition: all 0.2s linear;
+}
+.edit-box .contain .header > i:hover{
+    color: #444;
+}
+
+.edit-box .contain .content{
+    min-height: 20px;
+    padding: 20px;
+}
+.edit-box .contain .footer{
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    text-align: right;
+}
+.edit-box .contain .footer > span{
+    margin-left: 20px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+.edit-box .contain .footer > span.edit_bt_cancel{
+    background: #ccc;
+}
+.edit-box .contain .footer > span.edit_bt_cancel:hover{
+    background: #888;
+}
+.edit-box .contain .footer > span.edit_bt_save{
+    background: #6CADDB;
+}
+.edit-box .contain .footer > span.edit_bt_save:hover{
+    background: rgb(53, 112, 155);
+}
+
+.edit-box .contain .content textarea{
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    min-width: 100%;
+}

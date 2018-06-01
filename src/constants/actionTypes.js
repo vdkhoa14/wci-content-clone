@@ -1,0 +1,2 @@
+export const INIT_PAGE = 'INIT_PAGE'
+export const UPDATE_COMPONENT = 'UPDATE_COMPONENT'
